@@ -16,16 +16,20 @@ public class Teste2 {
 
 		// System.out.println(saida);
 
-		int mediaAluno = 50;
-		String nome = "Fabio";
+		int nota1 = 10;
+		int nota2 = 60;
+		int nota3 = 10;
+		int nota4 = 30;
+		int media = 0;
 
-	if (mediaAluno >= 70 && nome.equals("Alex")) {
-			System.out.println("Parabéns você esta aprovado");
-		} else if (mediaAluno < 70) {
-			System.out.println("Você esta reprovado");
-		}else {
-			System.out.println("Aluno não encontrado");
-			
+		media = (nota1 + nota2 + nota3 + nota4) / 4;
+
+		if (media >= 70) {
+			System.out.println("Aluno aprovado: " + media);
+		} else if (media >= 40 && media <= 69) {
+			System.out.println("Você esta em recuperação: " + media);
+		} else {
+			System.out.println("Aluno reprovado: " + media);
 		}
 
 	}
